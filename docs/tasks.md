@@ -185,3 +185,33 @@ glab issue create \
 ```
 
 ## ♻️ Iteration 4
+
+```bash
+for group in {praxisprojekt-01-demo,praxisprojekt-02-demo}; do \
+glab issue create \
+ --title "Deliverable 4: aktualisierte README und SPA-Deployment auf Gitlab Pages" \
+ --description " \
+ `echo "\
+ Als Dozenten (@bkj1, @tem1) des Kurses WSEG möchten wir zur Abschlusspräsentation eine aktualisierte README und eure Single-Page-Application auf Gitlab-Pages vorfinden. \n \
+- In README.md W-Fragen klären: \n \
+  - [ ] Wozu kann eure App verwendet werden? \n \
+  - [ ] Welchen Techstack für Frontend und Backend habt ihr verwendet? \n \
+  - [ ] Welche 3rd-Party Libraries habt ihr eingesetzt? \n \
+  - [ ] Wie kann das Projekt von neuen Entwickler*innen aufgesetzt werden? (Beschreibt die Schritte von &apos;git clone&apos; bis zu &apos;npm run dev(elop)&apos;). \n \
+  - [ ] Wie lauten die Anmeldedaten für einen Strapi Admin-User? (Auch wenn dies ein Anti-Pattern darstellt, ist es sinnvoll diese für euch und die Dozierenden zu hinterlegen). \n \n \
+Diese Anleitung gibt weitere gute Anhaltspunkte: https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/ \n \
+ \n \
+- Ergänzt eure README entsprechend der Vorlage (unter xyz): \n \
+  - [ ]  betreffend der selbstgewählten [Qualitätskriterien](https://github.com/digital-sustainability/module-wseg/blob/24/hs/docs/slides/content/11/08.md) \n \
+  - [ ] Belegt beispielhaft alle Kriterien durch Verlinkung des Codes mit Zeilennummern  \n \
+- Stellt eure SPA über eine CI/CD Pipeline bereit: \n \
+\n \
+  - [ ] Hilfestellungen dazu im [Ausschnitt Folien #9](https://github.com/digital-sustainability/module-wseg/blob/a17343422f40552976d504ac297fb5b0aa2250d8/docs/slides/content/09/01.md?plain=1#L113-L143)\n \
+  - [ ] Falls benötigt: Instead of altering &apos;vite.config.js&apos;, it is possible to pass &apos;--base&apos; to &apos;vite build&apos;: &apos;npm run build --base=&dollar;CI_PAGES_URL&apos;\n \
+  - [ ] Im .gitlab-ci.yml könnt ihr eine Regel erstellen, dass die neue(n) Stage(s) nur ausgeführt werden, wenn über das Gitlab-UI der Run-Button gestartet wird (&apos;when: manuals&apos;) oder eine entsprechende Commit-message eintrifft \n \
+  - [ ] Verlinkt eure Demosite ebenfalls in der README \n \
+\n \
+**Due date:** Die erwähnten Gitlab-Pages müssen spätestens zum oben angegebenen Präsentationtag bis 18.00 Uhr verfügbar sein. \
+"`"  --label important --no-editor -R https://gitlab.ti.bfh.ch/wseg-group-demo/$group \
+; done
+```
