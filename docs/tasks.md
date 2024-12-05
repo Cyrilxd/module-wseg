@@ -192,7 +192,7 @@ glab issue create \
  --title "Deliverable 4: aktualisierte README und SPA-Deployment auf Gitlab Pages" \
  --description " \
  `echo "\
- Als Dozenten (@bkj1, @tem1) des Kurses WSEG möchten wir zur Abschlusspräsentation eine aktualisierte README und eure Single-Page-Application auf Gitlab-Pages vorfinden. \n \
+ Als Dozenten (@bkj1, @tem1) des Kurses WSEG möchten wir nach der Abschlusspräsentation eine aktualisierte README und eure Single-Page-Application auf Gitlab-Pages vorfinden. \n \
 - In README.md W-Fragen klären: \n \
   - [ ] Wozu kann eure App verwendet werden? \n \
   - [ ] Welchen Techstack für Frontend und Backend habt ihr verwendet? \n \
@@ -201,9 +201,9 @@ glab issue create \
   - [ ] Wie lauten die Anmeldedaten für einen Strapi Admin-User? (Auch wenn dies ein Anti-Pattern darstellt, ist es sinnvoll diese für euch und die Dozierenden zu hinterlegen). \n \n \
 Diese Anleitung gibt weitere gute Anhaltspunkte: https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/ \n \
  \n \
-- Ergänzt eure README entsprechend der Vorlage (unter xyz): \n \
-  - [ ]  betreffend der selbstgewählten [Qualitätskriterien](https://github.com/digital-sustainability/module-wseg/blob/24/hs/docs/slides/content/11/08.md) \n \
-  - [ ] Belegt beispielhaft alle Kriterien durch Verlinkung des Codes mit Zeilennummern  \n \
+- Ergänzt eure README entsprechend [der Vorlage](https://gitlab.ti.bfh.ch/dsl-student-projects/wseg-24-hs/sandbox/-/blob/main/README.md#mvp): \n \
+  - [ ] betreffend der selbstgewählten [Qualitätskriterien](https://github.com/digital-sustainability/module-wseg/blob/24/hs/docs/slides/content/11/08.md) \n \
+  - [ ] Belegt beispielhaft die Kriterien durch Verlinkung des Codes mit Zeilennummern  \n \
 - Stellt eure SPA über eine CI/CD Pipeline bereit: \n \
 \n \
   - [ ] Hilfestellungen dazu im [Ausschnitt Folien #9](https://github.com/digital-sustainability/module-wseg/blob/a17343422f40552976d504ac297fb5b0aa2250d8/docs/slides/content/09/01.md?plain=1#L113-L143)\n \
@@ -211,7 +211,7 @@ Diese Anleitung gibt weitere gute Anhaltspunkte: https://www.freecodecamp.org/ne
   - [ ] Im .gitlab-ci.yml könnt ihr eine Regel erstellen, dass die neue(n) Stage(s) nur ausgeführt werden, wenn über das Gitlab-UI der Run-Button gestartet wird (&apos;when: manuals&apos;) oder eine entsprechende Commit-message eintrifft \n \
   - [ ] Verlinkt eure Demosite ebenfalls in der README \n \
 \n \
-**Due date:** Die erwähnten Gitlab-Pages müssen spätestens zum oben angegebenen Präsentationtag bis 18.00 Uhr verfügbar sein. \
+**Due date:** Dieses Deliverable 4 muss spätestens am Ende der Präsentationtagswoche (Freitag) bis 18.00 Uhr verfügbar sein. \
 "`"  --label important --no-editor -R https://gitlab.ti.bfh.ch/wseg-group-demo/$group \
 ; done
 ```
